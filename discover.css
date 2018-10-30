@@ -1,3 +1,4 @@
+
 .roundborder{
 	border-radius: 10px;
 }
@@ -47,6 +48,7 @@
 .topnav {
     overflow: hidden;
     background-color: #111;
+
 }
 
 /* Style the topnav links */
@@ -65,7 +67,14 @@
     color: black;
     border-radius: 10px;
 }
-
+.tnleft{
+   width: 90%;
+  float: left;
+}
+.tnright{
+   width: 10%;
+  float: right;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {

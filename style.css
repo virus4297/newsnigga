@@ -129,6 +129,14 @@ body {
     color: black;
     border-radius: 10px;
 }
+.tnleft{
+   width: 90%;
+  float: left;
+}
+.tnright{
+   width: 10%;
+  float: right;
+}
 
 
 /* Create three equal columns that floats next to each other */
