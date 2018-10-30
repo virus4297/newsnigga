@@ -1,56 +1,3 @@
-.post{
-    padding: 10px;
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
-    font-size: 15px;
-}
-* {
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-    background-color: #ededed;
-}
-.panel-heading{
-	display: grid;
-	grid-template-columns: 25% 50% 25%;
-	max-height: 50px;
-	font-size: 10px;
-  margin: 0;
-    background-color: #ededed;
-}
-.panel-body{
-
-	font-size: 12px;
-}
-.img-wrap{
-    width: 200px;
-  height: 150px;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-}
-#postimg {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  transform: translate(-50%, -50%);
-}
-.panel-footer{
-	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: 10% 10% 60% 20%;
-	max-height: 50px;
-	font-size: 10px;
-    margin: 0;
-    background-color: #ededed;
-}
 .roundborder{
 	border-radius: 10px;
 }
@@ -94,17 +41,6 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
-/* Style the header */
-.header {
-	margin: 10px 5px 10px 5px;
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    background-color: #ffffff;
 }
 
 /* Style the top navigation bar */
@@ -159,4 +95,41 @@ body {
     .column {
         width: 100%;
     }
+}
+
+.post{
+    padding: 10px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    font-size: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.img-wrap{
+    width: 200px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+#postimg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/*Carousal Css*/
+.carousel-slide{
+    background-color: #ffffff;
+}
+.carousel-inner{
+    margin-left: 150px;
 }
