@@ -13,11 +13,33 @@ body {
   margin: 0;
     background-color: #ededed;
 }
+.panel-heading{
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	max-height: 50px;
+	font-size: 10px;
+  margin: 0;
+    background-color: #ededed;
+}
+.panel-body{
 
+	font-size: 12px;
+}
+.panel-footer{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 10% 10% 60% 20%;
+	max-height: 50px;
+	font-size: 10px;
+    margin: 0;
+    background-color: #ededed;
+}
 .roundborder{
 	border-radius: 10px;
 }
-
+.logopic{
+	padding-left:10px;
+}
 .sidenav {
     height: 100%;
     width: 160px;
@@ -34,7 +56,7 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
 }
 
@@ -71,7 +93,7 @@ body {
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #111;
 }
 
 /* Style the topnav links */
@@ -95,19 +117,24 @@ body {
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 5px;
     padding-top: 10px;
     margin: 5px;
     margin-right: 2px;
     background-color: #ffffff;
+    margin: 0 auto;
+    content: center;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
+    width: 200px;
+    margin: 0 auto;
+    content: center;
     display: table;
     clear: both;
+    align-content: center;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
