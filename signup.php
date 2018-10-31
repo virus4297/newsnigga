@@ -1,34 +1,33 @@
 <?php
 if(isset($_POST['submit'])){
-    $username= $_POST['name'];
+//    $username= $_POST['name'];
     $password= $_POST['password'];
     $cpassword= $_POST['cpassword'];
-    $usn = $_POST['usn'];
-    $dept = $_POST['department']; 
+//      x
+   $club = $_POST['club']; 
     $email= $_POST['email'];
-    $phone= $_POST['phone'];
-    $gender= $_POST['gender'];
-    
+//    $phone= $_POST['phone'];
+//    $gender= $_POST['gender'];
+//    
 
-    $connection = mysqli_connect('localhost','root','','talentin');
-    
+    $connection = mysqli_connect('localhost','root','','news nigga');
     if($connection)
         echo("connected");
-    
     else
-        die("connection failed"); 
-    if($password===$cpassword){
+        die("not connected");
+     if($password==$cpassword){
+         echo "matched";
+    $query= "INSERT INTO  login (email,password,club_id) VALUES ('$email','$password','$club')";
+    $r =mysqli_query($connection,$query);
 
-    $query= "INSERT INTO reg (name,password,usn,gender,mobile,dept,email) VALUES ('$username','$password','$usn','$gender',$phone,'$dept','$email')";
-    $result1=mysqli_query($connection,$query);
-}
-else{
-    echo("password dont match");
-}
-    if(!$result1){
+    if(!$r){
         die("data cannot be sent");
     }
-    header('location:index.php');
+    else{
+    header('location:register.php');
+}
+        
+     }
 }
 ?>
 <!DOCTYPE html>
@@ -37,15 +36,21 @@ else{
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
-<body background="house.png">
+<body>
 	<div class="topcont">
 		<h2>Sign Up Here!!</h2>
 		<form action="signup.php" method="post">
 			
+<!--
 				<div class="col"><label for="name">NAME:</label>
 				<input type="text" name="name" placeholder="Name"></div>
+-->
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                    </div>
 				
-				<div class="col">
+			    	<div class="col">
 				<label for="password">Password:</label>
 				<input type="password" name="password" placeholder="Password">
 				</div>
@@ -56,26 +61,25 @@ else{
 				</div>
 
 				<div class="col">
-				<label for="ussn">Usn</label>
-				<input type="text" name="usn" placeholder="USN">
+				<label for="club">Clubid</label>
+				<input type="text" name="club" placeholder="ClubId">
 				</div>
 				
-				<div class="col">
-				<label for="email">Email</label>
-				<input type="email" name="email" placeholder="Email">
-				</div>
-				
+<!--
 				<div class="col">
 				<label for="phone">Phone Number</label>
 				<input type="text" name="phone" placeholder="phone number">
 				</div>
+-->
 				
-				<div class="col">
+				<div class="g">
+<!--
 				<div class="g">Gender:
 					<br>
 				<input type="radio" name="gender" value="male">Male
 				<input type="radio" name="gender" value="female">Female
 				</div>
+-->
 				<br>
 				<br>
 				<label for="department">Deprtment</label>
