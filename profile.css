@@ -1,0 +1,163 @@
+.post{
+    padding: 10px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    font-size: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover {
+	color: #000000;
+    background-color: #ddd;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* Style the header */
+.header {
+	margin: 10px 5px 10px 5px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #111;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px 14px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 10px;
+}
+.tnleft{
+   width: 90%;
+  float: left;
+}
+.tnright{
+   width: 10%;
+  float: right;
+}
+
+/* Style the header */
+.club {
+	margin: 10px 5px 10px 5px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-right: 2px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    width: 200px;
+    margin: 0 auto;
+    content: center;
+    display: table;
+    clear: both;
+    align-content: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.img-wrap{
+    width: 200px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+#postimg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#prof{
+	display: grid;	
+	width: 340%;
+}
+
+#club-col{
+
+}
+
+#club-row{
+
+}
